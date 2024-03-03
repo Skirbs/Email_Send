@@ -19,7 +19,7 @@ def send_mail(email, subject, content):
 
 def save_email(email):
     try:
-        email_txt = open("saved_email.txt", "r+")  # ! DOCUMENT THIS BOII 2.0
+        email_txt = open("saved_email.txt", "r+")
     except FileNotFoundError:
         email_txt = open("saved_email.txt", "w")
         email_txt.write(email)

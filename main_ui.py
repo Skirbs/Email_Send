@@ -42,7 +42,7 @@ class Main_UI(tk.Tk):
             self.feedback_msg.config(text="Email Entry Not Valid", fg="red")
             return
         self.feedback_msg.config(text="Sending Mail...", fg="gray")
-        Timer(0.1, send_mail_main).start()  # ! DOCUMENT THIS BOI
+        Timer(0.1, send_mail_main).start()  
 
     def open_address_menu(self):
         if self.email_menu != None:
